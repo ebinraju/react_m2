@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "react-app",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "max-params": ["error", 3],
+    "no-console": "error",
+    "no-alert": "error",
+    "no-debugger": "error",
+    "react/prop-types": "off",
+    "import/no-named-as-default-member":  "off",
+    "react/react-in-jsx-scope": "off",
+    "max-len": ["error", { "code": 120 }],
+    "max-lines": ["error", { "max": 300, "skipBlankLines": true, "skipComments": true }],
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false}],
+    "camelcase": ["error", { "properties": "always", "ignoreDestructuring": false, "ignoreImports": false, "ignoreGlobals": false }],
+    "import/no-anonymous-default-export": "off",
+    "no-useless-catch": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
