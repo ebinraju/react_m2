@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { UserManager, WebStorageStateStore } from 'oidc-client';
 
 const config = {
