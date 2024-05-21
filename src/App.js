@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { ErrorBoundary } from "react-error-boundary";
 import Dashboard from './components/dashboard';
